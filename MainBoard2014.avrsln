@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# AvrStudio Solution File, Format Version 11.00
+Project("{D1100916-62DA-4D80-A9B4-55A1E7CCEEB3}") = "Master_Main", "Master_Main\Master_Main.avrgccproj", "{753C8C56-4368-43AA-B6DD-407108855619}"
+EndProject
+Project("{D1100916-62DA-4D80-A9B4-55A1E7CCEEB3}") = "Slave_Led", "Slave_Led\Slave_Led.avrgccproj", "{6DA65073-195A-4389-9D94-3D19ED55A01F}"
+EndProject
+Project("{D1100916-62DA-4D80-A9B4-55A1E7CCEEB3}") = "Slave_Air", "Slave_Air\Slave_Air.avrgccproj", "{0B72ACBA-0751-4E04-AE3B-7FE367B95BC5}"
+EndProject
+Project("{D1100916-62DA-4D80-A9B4-55A1E7CCEEB3}") = "Slave_Motor", "Slave_Motor\Slave_Motor.avrgccproj", "{0701292E-2098-4A87-A94B-F9640D741AAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{753C8C56-4368-43AA-B6DD-407108855619}.Debug|AVR.ActiveCfg = Debug|AVR
+		{753C8C56-4368-43AA-B6DD-407108855619}.Debug|AVR.Build.0 = Debug|AVR
+		{753C8C56-4368-43AA-B6DD-407108855619}.Release|AVR.ActiveCfg = Release|AVR
+		{753C8C56-4368-43AA-B6DD-407108855619}.Release|AVR.Build.0 = Release|AVR
+		{6DA65073-195A-4389-9D94-3D19ED55A01F}.Debug|AVR.ActiveCfg = Debug|AVR
+		{6DA65073-195A-4389-9D94-3D19ED55A01F}.Debug|AVR.Build.0 = Debug|AVR
+		{6DA65073-195A-4389-9D94-3D19ED55A01F}.Release|AVR.ActiveCfg = Release|AVR
+		{6DA65073-195A-4389-9D94-3D19ED55A01F}.Release|AVR.Build.0 = Release|AVR
+		{0B72ACBA-0751-4E04-AE3B-7FE367B95BC5}.Debug|AVR.ActiveCfg = Debug|AVR
+		{0B72ACBA-0751-4E04-AE3B-7FE367B95BC5}.Debug|AVR.Build.0 = Debug|AVR
+		{0B72ACBA-0751-4E04-AE3B-7FE367B95BC5}.Release|AVR.ActiveCfg = Release|AVR
+		{0B72ACBA-0751-4E04-AE3B-7FE367B95BC5}.Release|AVR.Build.0 = Release|AVR
+		{0701292E-2098-4A87-A94B-F9640D741AAB}.Debug|AVR.ActiveCfg = Debug|AVR
+		{0701292E-2098-4A87-A94B-F9640D741AAB}.Debug|AVR.Build.0 = Debug|AVR
+		{0701292E-2098-4A87-A94B-F9640D741AAB}.Release|AVR.ActiveCfg = Release|AVR
+		{0701292E-2098-4A87-A94B-F9640D741AAB}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

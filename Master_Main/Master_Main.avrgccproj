@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>5.0</ProjectVersion>
+    <ProjectGuid>{753c8c56-4368-43aa-b6dd-407108855619}</ProjectGuid>
+    <avrdevice>ATmega64</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>C</Language>
+    <OutputFile>$(MSBuildProjectName).elf</OutputFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <UseGlobalToolchain>True</UseGlobalToolchain>
+    <ToolchainDirPath>
+    </ToolchainDirPath>
+    <MakeDirPath>
+    </MakeDirPath>
+    <GlobalToolchainPath>C:\Program Files (x86)\Atmel\AVR Studio 5.0\AVR ToolChain\bin</GlobalToolchainPath>
+    <AvrGccProjectExtensions>
+    </AvrGccProjectExtensions>
+    <AssemblyName>Master_Main</AssemblyName>
+    <Name>Master_Main</Name>
+    <RootNamespace>Master_Main</RootNamespace>
+    <avrtool>com.atmel.avrdbg.tool.simulator</avrtool>
+    <com_atmel_avrdbg_tool_simulator>
+      <ToolType xmlns="">com.atmel.avrdbg.tool.simulator</ToolType>
+      <ToolName xmlns="">AVR Simulator</ToolName>
+      <ToolNumber xmlns="">
+      </ToolNumber>
+      <Channel xmlns="">
+        <host>127.0.0.1</host>
+        <port>60989</port>
+        <ssl>False</ssl>
+      </Channel>
+    </com_atmel_avrdbg_tool_simulator>
+    <avrtoolinterface />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGcc>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.optimization.DebugLevel>None</avrgcc.compiler.optimization.DebugLevel>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+      </AvrGcc>
+    </ToolchainSettings>
+    <MemorySettings>
+    </MemorySettings>
+    <GenerateHexFile>True</GenerateHexFile>
+    <GenerateMapFile>True</GenerateMapFile>
+    <GenerateListFile>True</GenerateListFile>
+    <GenerateEepFile>True</GenerateEepFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGcc>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.assembler.debugging.DebugLevel>Default (-g2)</avrgcc.assembler.debugging.DebugLevel>
+      </AvrGcc>
+    </ToolchainSettings>
+    <MemorySettings>
+    </MemorySettings>
+    <GenerateHexFile>True</GenerateHexFile>
+    <GenerateMapFile>True</GenerateMapFile>
+    <GenerateListFile>True</GenerateListFile>
+    <GenerateEepFile>True</GenerateEepFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Communication\Mu\Mu.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Communication\Mu\Mu.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Communication\Mu\MuDef.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Communication\RemoteControl\RCClassic.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Communication\RemoteControl\RCReceive.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Communication\RemoteControl\RCReceiveDef.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Communication\RingBuffer\Ringbuffer.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Communication\RingBuffer\RingBufferDef.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Communication\RS485\RS485.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Communication\RS485\RS485.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Communication\RS485\RS485Def.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Communication\RS485\RS485_Data.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Communication\Uart\Uart.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Communication\Uart\Uart.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Communication\Uart\UartDef.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Defines\RegisterDefines.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Defines\StructDefines.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Defines\SystemDefines.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="globalDef.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Input\Encoder\Encoder.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Input\Encoder\Encoder.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Input\Encoder\EncoderDef.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Input\Exint\Exint.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Input\Exint\Exint.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Input\Exint\ExintDef.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Input\Sensor\Sensor.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Input\Sensor\SensorDef.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Input\Switch\Switch.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Input\Switch\SwitchDef.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="main.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Output\Air\Air.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Output\Air\Air.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Output\Air\AirDef.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Output\Buzzer\Buzzer.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Output\Buzzer\Buzzer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Output\Buzzer\BuzzerDef.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Output\Led\Led.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Output\Led\Led.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Output\Led\LedDef.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Output\Motor\Motor.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Output\Motor\Motor.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Output\Motor\MotorDef.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="System\Initialize\Initialize.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="System\Initialize\InitializeDef.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="System\Process\Process.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="System\Process\Process.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="System\Process\ProcessDef.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="System\Safety\Safety.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="System\Safety\Safety.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="System\Safety\SafetyDef.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="System\Setup\Setup.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="System\Setup\Setup.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="System\Setup\SetupDef.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="System\WDT\WDT.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="System\WDT\WDT.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Communication\Mu" />
+    <Folder Include="Communication\RingBuffer" />
+    <Folder Include="Communication\Uart" />
+    <Folder Include="Communication\RemoteControl" />
+    <Folder Include="Communication\RS485" />
+    <Folder Include="Input" />
+    <Folder Include="Communication" />
+    <Folder Include="Input\Encoder" />
+    <Folder Include="Input\Exint" />
+    <Folder Include="Input\Sensor" />
+    <Folder Include="Input\Switch" />
+    <Folder Include="Defines" />
+    <Folder Include="Output\Motor" />
+    <Folder Include="Output\Led" />
+    <Folder Include="Output\Air" />
+    <Folder Include="Output\Buzzer" />
+    <Folder Include="System" />
+    <Folder Include="Output" />
+    <Folder Include="System\Initialize" />
+    <Folder Include="System\WDT" />
+    <Folder Include="System\Safety" />
+    <Folder Include="System\Process" />
+    <Folder Include="System\Setup" />
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\AvrGCC.targets" />
+</Project>

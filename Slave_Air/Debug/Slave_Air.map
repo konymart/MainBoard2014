@@ -1,0 +1,493 @@
+Archive member included because of file (symbol)
+
+c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_exit.o)
+                              c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm64.o (exit)
+c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_copy_data.o)
+                              Air/Air.o (__do_copy_data)
+c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_clear_bss.o)
+                              Air/Air.o (__do_clear_bss)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm64.o
+LOAD Air/Air.o
+LOAD Led/Led.o
+LOAD main.o
+LOAD RS485/RS485.o
+LOAD Safety/Safety.o
+LOAD Switch/Switch.o
+LOAD Uart/Uart.o
+LOAD c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a
+LOAD c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5\libc.a
+LOAD c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xaac
+ *(.vectors)
+ .vectors       0x00000000       0x8c c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm64.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x0000008c                . = ALIGN (0x2)
+                0x0000008c                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000008c        0x0 linker stubs
+ *(.trampolines*)
+                0x0000008c                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000008c                __ctors_start = .
+ *(.ctors)
+                0x0000008c                __ctors_end = .
+                0x0000008c                __dtors_start = .
+ *(.dtors)
+                0x0000008c                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000008c        0x0 c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm64.o
+                0x0000008c                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000008c        0xc c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm64.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000098       0x16 c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_copy_data.o)
+                0x00000098                __do_copy_data
+ .init4         0x000000ae       0x10 c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_clear_bss.o)
+                0x000000ae                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000be        0x8 c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm64.o
+ *(.init9)
+ *(.text)
+ .text          0x000000c6        0x4 c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm64.o
+                0x000000c6                __vector_22
+                0x000000c6                __vector_28
+                0x000000c6                __vector_1
+                0x000000c6                __vector_32
+                0x000000c6                __vector_34
+                0x000000c6                __vector_24
+                0x000000c6                __vector_12
+                0x000000c6                __bad_interrupt
+                0x000000c6                __vector_6
+                0x000000c6                __vector_31
+                0x000000c6                __vector_3
+                0x000000c6                __vector_23
+                0x000000c6                __vector_25
+                0x000000c6                __vector_11
+                0x000000c6                __vector_13
+                0x000000c6                __vector_17
+                0x000000c6                __vector_19
+                0x000000c6                __vector_7
+                0x000000c6                __vector_27
+                0x000000c6                __vector_5
+                0x000000c6                __vector_33
+                0x000000c6                __vector_4
+                0x000000c6                __vector_9
+                0x000000c6                __vector_2
+                0x000000c6                __vector_21
+                0x000000c6                __vector_15
+                0x000000c6                __vector_8
+                0x000000c6                __vector_26
+                0x000000c6                __vector_14
+                0x000000c6                __vector_10
+                0x000000c6                __vector_16
+                0x000000c6                __vector_18
+                0x000000c6                __vector_20
+ .text          0x000000ca      0x412 Air/Air.o
+                0x000000ca                AirInitialize
+                0x000001b8                AirUpdate
+                0x000002ec                __vector_30
+                0x0000046a                __vector_29
+ .text          0x000004dc      0x1e8 Led/Led.o
+                0x000004dc                LedInitialize
+                0x000005b2                LedDrive
+ .text          0x000006c4       0x28 main.o
+                0x000006c4                main
+ .text          0x000006ec       0xc8 RS485/RS485.o
+                0x000006ec                RS485Initialize
+                0x00000720                RS485_putchar
+                0x0000074a                RS485_getchar
+ .text          0x000007b4       0x90 Safety/Safety.o
+                0x000007b4                SafetyInitialize
+                0x0000080c                PowerCheck
+ .text          0x00000844      0x11c Switch/Switch.o
+                0x00000844                SwitchInitialize
+                0x000008e2                GetDipSwitchStatus
+ .text          0x00000960      0x148 Uart/Uart.o
+                0x00000960                UartInitialize
+                0x000009f8                uart_putchar
+                0x00000a60                uart_getchar
+ .text          0x00000aa8        0x0 c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_exit.o)
+ .text          0x00000aa8        0x0 c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000aa8        0x0 c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_clear_bss.o)
+                0x00000aa8                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00000aa8        0x0 c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000aa8        0x0 c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000aa8        0x0 c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_clear_bss.o)
+                0x00000aa8                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000aa8        0x0 c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_exit.o)
+                0x00000aa8                _exit
+                0x00000aa8                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000aa8        0x4 c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000aac                _etext = .
+
+.data           0x00800100       0x48 load address 0x00000aac
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm64.o
+ .data          0x00800100       0x33 Air/Air.o
+                0x00800100                Air
+ .data          0x00800133       0x14 Led/Led.o
+                0x00800133                led
+ .data          0x00800147        0x0 main.o
+ .data          0x00800147        0x0 RS485/RS485.o
+ .data          0x00800147        0x0 Safety/Safety.o
+ .data          0x00800147        0x0 Switch/Switch.o
+ .data          0x00800147        0x0 Uart/Uart.o
+ .data          0x00800147        0x0 c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_exit.o)
+ .data          0x00800147        0x0 c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800147        0x0 c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800148                . = ALIGN (0x2)
+ *fill*         0x00800147        0x1 00
+                0x00800148                _edata = .
+                0x00800148                PROVIDE (__data_end, .)
+
+.bss            0x00800148       0x13
+                0x00800148                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800148        0x0 c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm64.o
+ .bss           0x00800148       0x13 Air/Air.o
+ .bss           0x0080015b        0x0 Led/Led.o
+ .bss           0x0080015b        0x0 main.o
+ .bss           0x0080015b        0x0 RS485/RS485.o
+ .bss           0x0080015b        0x0 Safety/Safety.o
+ .bss           0x0080015b        0x0 Switch/Switch.o
+ .bss           0x0080015b        0x0 Uart/Uart.o
+ .bss           0x0080015b        0x0 c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_exit.o)
+ .bss           0x0080015b        0x0 c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_copy_data.o)
+ .bss           0x0080015b        0x0 c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ *(COMMON)
+                0x0080015b                PROVIDE (__bss_end, .)
+                0x00000aac                __data_load_start = LOADADDR (.data)
+                0x00000af4                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080015b        0x0
+                0x0080015b                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x0080015b                PROVIDE (__noinit_end, .)
+                0x0080015b                _end = .
+                0x0080015b                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000      0x6cc
+ *(.stab)
+ .stab          0x00000000      0x6cc c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm64.o
+
+.stabstr        0x00000000       0x85
+ *(.stabstr)
+ .stabstr       0x00000000       0x85 c:/program files (x86)/atmel/avr studio 5.0/avr toolchain/bin/../lib/gcc/avr/4.5.1/../../../../avr/lib/avr5/crtm64.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0xe0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 Air/Air.o
+ .debug_aranges
+                0x00000020       0x20 Led/Led.o
+ .debug_aranges
+                0x00000040       0x20 main.o
+ .debug_aranges
+                0x00000060       0x20 RS485/RS485.o
+ .debug_aranges
+                0x00000080       0x20 Safety/Safety.o
+ .debug_aranges
+                0x000000a0       0x20 Switch/Switch.o
+ .debug_aranges
+                0x000000c0       0x20 Uart/Uart.o
+
+.debug_pubnames
+                0x00000000      0x1b3
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x5a Air/Air.o
+ .debug_pubnames
+                0x0000005a       0x39 Led/Led.o
+ .debug_pubnames
+                0x00000093       0x1b main.o
+ .debug_pubnames
+                0x000000ae       0x4a RS485/RS485.o
+ .debug_pubnames
+                0x000000f8       0x36 Safety/Safety.o
+ .debug_pubnames
+                0x0000012e       0x3e Switch/Switch.o
+ .debug_pubnames
+                0x0000016c       0x47 Uart/Uart.o
+
+.debug_info     0x00000000      0x845
+ *(.debug_info)
+ .debug_info    0x00000000      0x2fd Air/Air.o
+ .debug_info    0x000002fd      0x142 Led/Led.o
+ .debug_info    0x0000043f       0x87 main.o
+ .debug_info    0x000004c6      0x10a RS485/RS485.o
+ .debug_info    0x000005d0       0xa9 Safety/Safety.o
+ .debug_info    0x00000679       0xb1 Switch/Switch.o
+ .debug_info    0x0000072a      0x11b Uart/Uart.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x475
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x139 Air/Air.o
+ .debug_abbrev  0x00000139       0xf7 Led/Led.o
+ .debug_abbrev  0x00000230       0x57 main.o
+ .debug_abbrev  0x00000287       0x79 RS485/RS485.o
+ .debug_abbrev  0x00000300       0x63 Safety/Safety.o
+ .debug_abbrev  0x00000363       0x72 Switch/Switch.o
+ .debug_abbrev  0x000003d5       0xa0 Uart/Uart.o
+
+.debug_line     0x00000000      0xb11
+ *(.debug_line)
+ .debug_line    0x00000000      0x355 Air/Air.o
+ .debug_line    0x00000355      0x141 Led/Led.o
+ .debug_line    0x00000496       0x9d main.o
+ .debug_line    0x00000533      0x181 RS485/RS485.o
+ .debug_line    0x000006b4      0x143 Safety/Safety.o
+ .debug_line    0x000007f7      0x17b Switch/Switch.o
+ .debug_line    0x00000972      0x19f Uart/Uart.o
+
+.debug_frame    0x00000000      0x1b0
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x70 Air/Air.o
+ .debug_frame   0x00000070       0x30 Led/Led.o
+ .debug_frame   0x000000a0       0x20 main.o
+ .debug_frame   0x000000c0       0x50 RS485/RS485.o
+ .debug_frame   0x00000110       0x30 Safety/Safety.o
+ .debug_frame   0x00000140       0x30 Switch/Switch.o
+ .debug_frame   0x00000170       0x40 Uart/Uart.o
+
+.debug_str      0x00000000      0x2b9
+ *(.debug_str)
+ .debug_str     0x00000000      0x17e Air/Air.o
+                                0x1b7 (size before relaxing)
+ .debug_str     0x0000017e       0x2b Led/Led.o
+                                 0xe8 (size before relaxing)
+ .debug_str     0x000001a9       0x22 main.o
+                                 0xcc (size before relaxing)
+ .debug_str     0x000001cb       0x56 RS485/RS485.o
+                                0x10d (size before relaxing)
+ .debug_str     0x00000221       0x27 Safety/Safety.o
+                                 0xf0 (size before relaxing)
+ .debug_str     0x00000248       0x2b Switch/Switch.o
+                                 0xf9 (size before relaxing)
+ .debug_str     0x00000273       0x46 Uart/Uart.o
+                                0x10d (size before relaxing)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(Slave_Air.elf elf32-avr)
+LOAD linker stubs
+
+.debug_pubtypes
+                0x00000000      0x109
+ .debug_pubtypes
+                0x00000000       0x33 Air/Air.o
+ .debug_pubtypes
+                0x00000033       0x25 Led/Led.o
+ .debug_pubtypes
+                0x00000058       0x12 main.o
+ .debug_pubtypes
+                0x0000006a       0x1e RS485/RS485.o
+ .debug_pubtypes
+                0x00000088       0x2b Safety/Safety.o
+ .debug_pubtypes
+                0x000000b3       0x2b Switch/Switch.o
+ .debug_pubtypes
+                0x000000de       0x2b Uart/Uart.o

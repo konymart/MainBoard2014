@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<?xml-stylesheet type='text/xsl' href='AVRStudioConversionLog.xslt'?>
+<ConversionLog BrandName="Atmel Studio 6.2 Project ConversionLog">
+  <GeneralFailureInformation name="General Failure Information" id="GeneralFailureInformation" status="Failure">
+    <LogEntry>
+      <Type>Error</Type>
+      <DateTime>2015/06/18 8:27:20</DateTime>
+      <Message>Failure: ルート レベルのデータが無効です。 行 2、位置 1。</Message>
+      <Exception>System.Xml.XmlException: ルート レベルのデータが無効です。 行 2、位置 1。
+   場所 System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   場所 System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   場所 System.Xml.XmlTextReaderImpl.ParseRootLevelWhitespace()
+   場所 System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   場所 System.Xml.XmlTextReaderImpl.Read()
+   場所 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   場所 System.Xml.XmlDocument.Load(XmlReader reader)
+   場所 System.Xml.XmlDocument.LoadXml(String xml)
+   場所 Atmel.VsIde.AvrStudio.Project.AvrStudio4ProjectImporter.AvrStudio4.Avr4ProjectFileHandler.GetProjectFileHandler(String projectFileName, Avr4ProjectType&amp; avr4ProjectType)
+   場所 Atmel.VsIde.AvrStudio.Project.AvrStudio4ProjectImporter.AVR4ConversionEngine.InitializeSourceProject()
+   場所 Atmel.VsIde.AvrStudio.Project.AvrStudio4ProjectImporter.AVR4ConversionEngine.GetProjectInfoProvider()
+   場所 Atmel.VsIde.AvrStudio.Project.AvrStudio4ProjectImporter.AVR4ConversionEngine.&lt;GetSourceProjectsAndTargets&gt;d__1.MoveNext()
+   場所 ProjectImporter.Core.AVRConversionEngine.ConvertProjects()</Exception>
+    </LogEntry>
+  </GeneralFailureInformation>
+</ConversionLog>
